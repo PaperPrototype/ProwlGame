@@ -6,3 +6,6 @@ Logs/
 .vs/
 bin/
 obj/
+
+# mac
+.DS_Store
