@@ -7,5 +7,5 @@ Logs/
 bin/
 obj/
 
-# mac
+# MacOS
 .DS_Store
