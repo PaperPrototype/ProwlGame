@@ -1,0 +1,19 @@
+{
+  "Scenes": [
+    {
+      "Path": "New Scene.scene",
+      "SceneGuid": "432c0000-92b4-407f-bd47-e49c7ac46301",
+      "Enabled": true
+    }
+  ],
+  "Platform": 2,
+  "Config": 1,
+  "OutputDirectory": "/Users/abdiellopez/Documents/Prowl Projects/MyGame2/Builds/v1.0",
+  "PackagingMode": 1,
+  "AssetMode": 1,
+  "MaxPakSizeMB": 2048,
+  "SelfContained": true,
+  "WindowWidth": 1024,
+  "WindowHeight": 720,
+  "RuntimeIdentifier": "osx-x64"
+}

@@ -8,6 +8,11 @@
   "AllowSleep": true,
   "UseMultithreading": true,
   "AutoSyncTransforms": true,
+  "EnhancedDeterminism": false,
+  "ThreadModel": 0,
+  "EnableAuxiliaryContactPoints": true,
+  "PersistentContactManifold": true,
+  "SpeculativeRelaxationFactor": 0.9,
   "CollisionMatrixRows": [
     4294967295,
     4294967295,

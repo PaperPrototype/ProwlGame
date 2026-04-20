@@ -1,0 +1,13 @@
+{
+  "guid": "4161e668-26fb-46b1-be55-43c1a0df7e7f",
+  "importer": "EditorModelImporter",
+  "importerVersion": 4,
+  "settings": {
+    "generateNormals": true,
+    "generateSmoothNormals": true,
+    "recalculateNormals": false,
+    "calculateTangents": true,
+    "flipUVs": true,
+    "unitScale": 1F
+  }
+}
