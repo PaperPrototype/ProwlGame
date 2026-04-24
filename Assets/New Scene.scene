@@ -251,9 +251,9 @@
               "$id": 15,
               "$type": "Prowl.Vector.Transform, Prowl.Runtime, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null",
               "_localPosition": {
-                "X": 19.193827F,
-                "Y": 27.985914F,
-                "Z": -13.127493F
+                "X": 42.99682F,
+                "Y": 19.946857F,
+                "Z": -3.938852F
               },
               "_localScale": {
                 "X": 1F,
@@ -261,10 +261,10 @@
                 "Z": 1F
               },
               "_localRotation": {
-                "X": 0.19576575F,
-                "Y": 0.2236885F,
-                "Z": -0.045916803F,
-                "W": 0.9536933F
+                "X": 0.19588868F,
+                "Y": 0.02395941F,
+                "Z": -0.004787589F,
+                "W": 0.98032165F
               }
             },
             "Components": [
@@ -274,16 +274,6 @@
                 "Effects": [
                   {
                     "$id": 17,
-                    "$type": "Prowl.Runtime.Rendering.BokehDepthOfFieldEffect, Prowl.Runtime, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null",
-                    "UseAutoFocus": true,
-                    "ManualFocusPoint": 0.5F,
-                    "FocusStrength": 2000F,
-                    "MaxBlurRadius": 4F,
-                    "Resolution": 2,
-                    "Enabled": true
-                  },
-                  {
-                    "$id": 18,
                     "$type": "Prowl.Runtime.Rendering.TonemapperEffect, Prowl.Runtime, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null",
                     "Contrast": 1.1F,
                     "Saturation": 1.1F,
@@ -336,7 +326,7 @@
         "$id": 14
       },
       {
-        "$id": 19,
+        "$id": 18,
         "Name": "Directional Light",
         "AssetPath": "",
         "Identifier": "c1fdffc7-5b5d-40ac-a6c1-63925affffb4",
@@ -347,7 +337,7 @@
         "LayerIndex": 0,
         "HideFlags": 0,
         "Transform": {
-          "$id": 20,
+          "$id": 19,
           "$type": "Prowl.Vector.Transform, Prowl.Runtime, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null",
           "_localPosition": {
             "X": 0F,
@@ -368,7 +358,7 @@
         },
         "Components": [
           {
-            "$id": 21,
+            "$id": 20,
             "$type": "Prowl.Runtime.DirectionalLight, Prowl.Runtime, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null",
             "ShadowResolution": 1024,
             "Cascades": 2,
@@ -399,7 +389,7 @@
         ]
       },
       {
-        "$id": 22,
+        "$id": 21,
         "Name": "Terrain",
         "AssetPath": "",
         "Identifier": "e25b3acd-2221-4d96-aa17-404c9a74c6ab",
@@ -410,7 +400,7 @@
         "LayerIndex": 0,
         "HideFlags": 0,
         "Transform": {
-          "$id": 23,
+          "$id": 22,
           "$type": "Prowl.Vector.Transform, Prowl.Runtime, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null",
           "_localPosition": {
             "X": 3.39F,
@@ -431,7 +421,7 @@
         },
         "Components": [
           {
-            "$id": 24,
+            "$id": 23,
             "$type": "Prowl.Runtime.Terrain.TerrainComponent, Prowl.Runtime, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null",
             "Data": {
               "AssetID": "ce4fc955-6a4b-4908-b6de-32813c439dd4"
@@ -445,6 +435,7 @@
               "AssetID": "00000000-0000-0000-0000-000000000000"
             },
             "GrassDistance": 150F,
+            "GrassFadeStart": 0.6F,
             "GrassDensityMultiplier": 1F,
             "TreeDistance": 500F,
             "_identifier": "5ab00b96-2d56-4c63-9731-592ee92e11aa",
@@ -456,7 +447,7 @@
             "Name": "NewTerrainComponent"
           },
           {
-            "$id": 25,
+            "$id": 24,
             "$type": "Prowl.Runtime.TerrainCollider, Prowl.Runtime, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null",
             "_identifier": "29a70064-c05c-4231-9601-673742f3225b",
             "_enabled": true,
@@ -472,7 +463,7 @@
         ]
       },
       {
-        "$id": 26,
+        "$id": 25,
         "Name": "Cube",
         "AssetPath": "",
         "Identifier": "e9840326-20ce-4de8-80ef-90a406bb7bfe",
@@ -483,7 +474,7 @@
         "LayerIndex": 0,
         "HideFlags": 0,
         "Transform": {
-          "$id": 27,
+          "$id": 26,
           "$type": "Prowl.Vector.Transform, Prowl.Runtime, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null",
           "_localPosition": {
             "X": 42.707367F,
@@ -504,7 +495,7 @@
         },
         "Components": [
           {
-            "$id": 28,
+            "$id": 27,
             "$type": "Prowl.Runtime.MeshRenderer, Prowl.Runtime, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null",
             "Mesh": {
               "AssetID": "97e8b0a9-e054-0d51-9663-eb372d776c90"
@@ -523,7 +514,7 @@
             "Name": "NewMeshRenderer"
           },
           {
-            "$id": 29,
+            "$id": 28,
             "$type": "Prowl.Runtime.Rigidbody3D, Prowl.Runtime, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null",
             "isStatic": false,
             "isSpeculative": false,
@@ -546,7 +537,7 @@
             "Name": "NewRigidbody3D"
           },
           {
-            "$id": 30,
+            "$id": 29,
             "$type": "Prowl.Runtime.BoxCollider, Prowl.Runtime, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null",
             "size": {
               "X": 1F,
@@ -577,7 +568,7 @@
         ]
       },
       {
-        "$id": 31,
+        "$id": 30,
         "Name": "TwistedTree_1",
         "AssetPath": "",
         "Identifier": "218bc56a-b206-43f4-b5bf-0ccfc8836cb2",
@@ -588,7 +579,7 @@
         "LayerIndex": 0,
         "HideFlags": 0,
         "Transform": {
-          "$id": 32,
+          "$id": 31,
           "$type": "Prowl.Vector.Transform, Prowl.Runtime, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null",
           "_localPosition": {
             "X": 9.090708F,
@@ -609,7 +600,7 @@
         },
         "Components": [
           {
-            "$id": 33,
+            "$id": 32,
             "$type": "Prowl.Runtime.MeshRenderer, Prowl.Runtime, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null",
             "Mesh": {
               "AssetID": "c289c9d4-a17a-ec9d-28d9-d2fe2bf1af35"
@@ -636,7 +627,7 @@
         ]
       },
       {
-        "$id": 34,
+        "$id": 33,
         "Name": "TwistedTree_1",
         "AssetPath": "",
         "Identifier": "3ff7f453-dec7-4cf3-9844-06e2823fa44e",
@@ -647,7 +638,7 @@
         "LayerIndex": 0,
         "HideFlags": 0,
         "Transform": {
-          "$id": 35,
+          "$id": 34,
           "$type": "Prowl.Vector.Transform, Prowl.Runtime, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null",
           "_localPosition": {
             "X": 9.7818165F,
@@ -671,12 +662,12 @@
         ],
         "Children": [
           {
-            "$id": 31
+            "$id": 30
           }
         ]
       },
       {
-        "$id": 36,
+        "$id": 35,
         "Name": "TwistedTree_1",
         "AssetPath": "",
         "Identifier": "c7746bca-27ad-4004-b2e3-df1638bd35f3",
@@ -687,7 +678,7 @@
         "LayerIndex": 0,
         "HideFlags": 0,
         "Transform": {
-          "$id": 37,
+          "$id": 36,
           "$type": "Prowl.Vector.Transform, Prowl.Runtime, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null",
           "_localPosition": {
             "X": 57.254612F,
@@ -711,7 +702,7 @@
         ],
         "Children": [
           {
-            "$id": 38,
+            "$id": 37,
             "Name": "TwistedTree_1",
             "AssetPath": "",
             "Identifier": "3e2c74c3-31ee-41f9-9e29-beb2af61c816",
@@ -722,7 +713,7 @@
             "LayerIndex": 0,
             "HideFlags": 0,
             "Transform": {
-              "$id": 39,
+              "$id": 38,
               "$type": "Prowl.Vector.Transform, Prowl.Runtime, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null",
               "_localPosition": {
                 "X": 0F,
@@ -743,7 +734,7 @@
             },
             "Components": [
               {
-                "$id": 40,
+                "$id": 39,
                 "$type": "Prowl.Runtime.MeshRenderer, Prowl.Runtime, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null",
                 "Mesh": {
                   "AssetID": "c289c9d4-a17a-ec9d-28d9-d2fe2bf1af35"
@@ -772,10 +763,10 @@
         ]
       },
       {
-        "$id": 38
+        "$id": 37
       },
       {
-        "$id": 41,
+        "$id": 40,
         "Name": "Cube (Copy)",
         "AssetPath": "",
         "Identifier": "6dd24652-da03-400c-81f5-e7c5284a2423",
@@ -786,7 +777,7 @@
         "LayerIndex": 0,
         "HideFlags": 0,
         "Transform": {
-          "$id": 42,
+          "$id": 41,
           "$type": "Prowl.Vector.Transform, Prowl.Runtime, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null",
           "_localPosition": {
             "X": 42.707367F,
@@ -807,7 +798,7 @@
         },
         "Components": [
           {
-            "$id": 43,
+            "$id": 42,
             "$type": "Prowl.Runtime.MeshRenderer, Prowl.Runtime, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null",
             "Mesh": {
               "AssetID": "97e8b0a9-e054-0d51-9663-eb372d776c90"
@@ -826,7 +817,7 @@
             "Name": "NewMeshRenderer"
           },
           {
-            "$id": 44,
+            "$id": 43,
             "$type": "Prowl.Runtime.Rigidbody3D, Prowl.Runtime, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null",
             "isStatic": false,
             "isSpeculative": false,
@@ -849,7 +840,7 @@
             "Name": "NewRigidbody3D"
           },
           {
-            "$id": 45,
+            "$id": 44,
             "$type": "Prowl.Runtime.BoxCollider, Prowl.Runtime, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null",
             "size": {
               "X": 1F,
@@ -880,7 +871,7 @@
         ]
       },
       {
-        "$id": 46,
+        "$id": 45,
         "Name": "Plant_1_Big",
         "AssetPath": "",
         "Identifier": "6f9e169f-9435-46a2-a585-5064b3d6d133",
@@ -891,7 +882,7 @@
         "LayerIndex": 0,
         "HideFlags": 0,
         "Transform": {
-          "$id": 47,
+          "$id": 46,
           "$type": "Prowl.Vector.Transform, Prowl.Runtime, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null",
           "_localPosition": {
             "X": 39.34576F,
@@ -915,7 +906,7 @@
         ],
         "Children": [
           {
-            "$id": 48,
+            "$id": 47,
             "Name": "Plant_1_Big",
             "AssetPath": "",
             "Identifier": "102f5624-84ce-4a2a-865f-c8034f857c57",
@@ -926,7 +917,7 @@
             "LayerIndex": 0,
             "HideFlags": 0,
             "Transform": {
-              "$id": 49,
+              "$id": 48,
               "$type": "Prowl.Vector.Transform, Prowl.Runtime, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null",
               "_localPosition": {
                 "X": 0F,
@@ -947,7 +938,7 @@
             },
             "Components": [
               {
-                "$id": 50,
+                "$id": 49,
                 "$type": "Prowl.Runtime.MeshRenderer, Prowl.Runtime, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null",
                 "Mesh": {
                   "AssetID": "f21aaa18-e8d0-0280-7237-3d6b36cf59c3"
@@ -973,10 +964,10 @@
         ]
       },
       {
-        "$id": 48
+        "$id": 47
       },
       {
-        "$id": 51,
+        "$id": 50,
         "Name": "Barbarian",
         "AssetPath": "",
         "Identifier": "a41d49ae-4366-4853-84b6-1d4b507c7d48",
@@ -987,7 +978,7 @@
         "LayerIndex": 0,
         "HideFlags": 0,
         "Transform": {
-          "$id": 52,
+          "$id": 51,
           "$type": "Prowl.Vector.Transform, Prowl.Runtime, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null",
           "_localPosition": {
             "X": 0F,
@@ -1011,7 +1002,7 @@
         ],
         "Children": [
           {
-            "$id": 53,
+            "$id": 52,
             "Name": "Rig_Medium",
             "AssetPath": "",
             "Identifier": "cc22696f-b9b3-4433-80eb-72a9c6970469",
@@ -1022,7 +1013,7 @@
             "LayerIndex": 0,
             "HideFlags": 0,
             "Transform": {
-              "$id": 54,
+              "$id": 53,
               "$type": "Prowl.Vector.Transform, Prowl.Runtime, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null",
               "_localPosition": {
                 "X": 0F,
@@ -1046,7 +1037,7 @@
             ],
             "Children": [
               {
-                "$id": 55,
+                "$id": 54,
                 "Name": "Barbarian_ArmLeft",
                 "AssetPath": "",
                 "Identifier": "50a61c99-aae9-4b50-80ae-7f5477c88b02",
@@ -1057,7 +1048,7 @@
                 "LayerIndex": 0,
                 "HideFlags": 0,
                 "Transform": {
-                  "$id": 56,
+                  "$id": 55,
                   "$type": "Prowl.Vector.Transform, Prowl.Runtime, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null",
                   "_localPosition": {
                     "X": 0F,
@@ -1078,7 +1069,7 @@
                 },
                 "Components": [
                   {
-                    "$id": 57,
+                    "$id": 56,
                     "$type": "Prowl.Runtime.SkinnedMeshRenderer, Prowl.Runtime, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null",
                     "SharedMesh": {
                       "AssetID": "28037e7a-55eb-5f6d-4951-d3fa58fb3ab4"
@@ -1136,7 +1127,7 @@
                 ]
               },
               {
-                "$id": 58,
+                "$id": 57,
                 "Name": "Barbarian_ArmRight",
                 "AssetPath": "",
                 "Identifier": "37149618-2aa6-47dc-98a2-6e97adc6e0c3",
@@ -1147,7 +1138,7 @@
                 "LayerIndex": 0,
                 "HideFlags": 0,
                 "Transform": {
-                  "$id": 59,
+                  "$id": 58,
                   "$type": "Prowl.Vector.Transform, Prowl.Runtime, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null",
                   "_localPosition": {
                     "X": 0F,
@@ -1168,7 +1159,7 @@
                 },
                 "Components": [
                   {
-                    "$id": 60,
+                    "$id": 59,
                     "$type": "Prowl.Runtime.SkinnedMeshRenderer, Prowl.Runtime, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null",
                     "SharedMesh": {
                       "AssetID": "3744d900-cc63-7ab8-b1b1-4d7bff625de0"
@@ -1226,7 +1217,7 @@
                 ]
               },
               {
-                "$id": 61,
+                "$id": 60,
                 "Name": "Barbarian_BearHat",
                 "AssetPath": "",
                 "Identifier": "f919afca-5cbe-4dea-904c-b28c4975294f",
@@ -1237,7 +1228,7 @@
                 "LayerIndex": 0,
                 "HideFlags": 0,
                 "Transform": {
-                  "$id": 62,
+                  "$id": 61,
                   "$type": "Prowl.Vector.Transform, Prowl.Runtime, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null",
                   "_localPosition": {
                     "X": 0F,
@@ -1258,7 +1249,7 @@
                 },
                 "Components": [
                   {
-                    "$id": 63,
+                    "$id": 62,
                     "$type": "Prowl.Runtime.SkinnedMeshRenderer, Prowl.Runtime, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null",
                     "SharedMesh": {
                       "AssetID": "84f5cfb7-7bf2-dd45-7cf9-11b6a386a403"
@@ -1316,7 +1307,7 @@
                 ]
               },
               {
-                "$id": 64,
+                "$id": 63,
                 "Name": "Barbarian_Body",
                 "AssetPath": "",
                 "Identifier": "df22be7c-3e8b-4d47-9648-f6c0fcbc8c45",
@@ -1327,7 +1318,7 @@
                 "LayerIndex": 0,
                 "HideFlags": 0,
                 "Transform": {
-                  "$id": 65,
+                  "$id": 64,
                   "$type": "Prowl.Vector.Transform, Prowl.Runtime, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null",
                   "_localPosition": {
                     "X": 0F,
@@ -1348,7 +1339,7 @@
                 },
                 "Components": [
                   {
-                    "$id": 66,
+                    "$id": 65,
                     "$type": "Prowl.Runtime.SkinnedMeshRenderer, Prowl.Runtime, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null",
                     "SharedMesh": {
                       "AssetID": "4dc2ab1c-cdae-1cdb-bfe3-217349b45a8d"
@@ -1406,7 +1397,7 @@
                 ]
               },
               {
-                "$id": 67,
+                "$id": 66,
                 "Name": "Barbarian_Head",
                 "AssetPath": "",
                 "Identifier": "70800bb7-70af-4a88-b084-ce9dfa90165a",
@@ -1417,7 +1408,7 @@
                 "LayerIndex": 0,
                 "HideFlags": 0,
                 "Transform": {
-                  "$id": 68,
+                  "$id": 67,
                   "$type": "Prowl.Vector.Transform, Prowl.Runtime, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null",
                   "_localPosition": {
                     "X": 0F,
@@ -1438,7 +1429,7 @@
                 },
                 "Components": [
                   {
-                    "$id": 69,
+                    "$id": 68,
                     "$type": "Prowl.Runtime.SkinnedMeshRenderer, Prowl.Runtime, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null",
                     "SharedMesh": {
                       "AssetID": "7bb50433-bb2c-60aa-0e48-46e985928373"
@@ -1496,7 +1487,7 @@
                 ]
               },
               {
-                "$id": 70,
+                "$id": 69,
                 "Name": "Barbarian_LegLeft",
                 "AssetPath": "",
                 "Identifier": "ad45ecb4-44d7-485b-9a6c-01e3df2b70c8",
@@ -1507,7 +1498,7 @@
                 "LayerIndex": 0,
                 "HideFlags": 0,
                 "Transform": {
-                  "$id": 71,
+                  "$id": 70,
                   "$type": "Prowl.Vector.Transform, Prowl.Runtime, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null",
                   "_localPosition": {
                     "X": 0F,
@@ -1528,7 +1519,7 @@
                 },
                 "Components": [
                   {
-                    "$id": 72,
+                    "$id": 71,
                     "$type": "Prowl.Runtime.SkinnedMeshRenderer, Prowl.Runtime, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null",
                     "SharedMesh": {
                       "AssetID": "fec89944-dd4e-eec3-7f17-bac79fb1db5e"
@@ -1586,7 +1577,7 @@
                 ]
               },
               {
-                "$id": 73,
+                "$id": 72,
                 "Name": "Barbarian_LegRight",
                 "AssetPath": "",
                 "Identifier": "934f391f-9f4c-4c40-8b89-f481591f355d",
@@ -1597,7 +1588,7 @@
                 "LayerIndex": 0,
                 "HideFlags": 0,
                 "Transform": {
-                  "$id": 74,
+                  "$id": 73,
                   "$type": "Prowl.Vector.Transform, Prowl.Runtime, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null",
                   "_localPosition": {
                     "X": 0F,
@@ -1618,7 +1609,7 @@
                 },
                 "Components": [
                   {
-                    "$id": 75,
+                    "$id": 74,
                     "$type": "Prowl.Runtime.SkinnedMeshRenderer, Prowl.Runtime, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null",
                     "SharedMesh": {
                       "AssetID": "90889055-daee-7f95-331f-ba45fbbe888a"
@@ -1676,7 +1667,7 @@
                 ]
               },
               {
-                "$id": 76,
+                "$id": 75,
                 "Name": "root",
                 "AssetPath": "",
                 "Identifier": "7faac7a2-8523-439f-85b9-b9af8e093721",
@@ -1687,7 +1678,7 @@
                 "LayerIndex": 0,
                 "HideFlags": 0,
                 "Transform": {
-                  "$id": 77,
+                  "$id": 76,
                   "$type": "Prowl.Vector.Transform, Prowl.Runtime, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null",
                   "_localPosition": {
                     "X": 0F,
@@ -1711,7 +1702,7 @@
                 ],
                 "Children": [
                   {
-                    "$id": 78,
+                    "$id": 77,
                     "Name": "hips",
                     "AssetPath": "",
                     "Identifier": "fe1be620-073d-49e0-ac41-555e410f597e",
@@ -1722,7 +1713,7 @@
                     "LayerIndex": 0,
                     "HideFlags": 0,
                     "Transform": {
-                      "$id": 79,
+                      "$id": 78,
                       "$type": "Prowl.Vector.Transform, Prowl.Runtime, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null",
                       "_localPosition": {
                         "X": 0F,
@@ -1746,7 +1737,7 @@
                     ],
                     "Children": [
                       {
-                        "$id": 80,
+                        "$id": 79,
                         "Name": "spine",
                         "AssetPath": "",
                         "Identifier": "2da94775-fc5c-4ceb-9c89-6d72c98ec832",
@@ -1757,7 +1748,7 @@
                         "LayerIndex": 0,
                         "HideFlags": 0,
                         "Transform": {
-                          "$id": 81,
+                          "$id": 80,
                           "$type": "Prowl.Vector.Transform, Prowl.Runtime, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null",
                           "_localPosition": {
                             "X": 0F,
@@ -1781,7 +1772,7 @@
                         ],
                         "Children": [
                           {
-                            "$id": 82,
+                            "$id": 81,
                             "Name": "chest",
                             "AssetPath": "",
                             "Identifier": "9835432e-778d-40be-a7a1-fc973970365c",
@@ -1792,7 +1783,7 @@
                             "LayerIndex": 0,
                             "HideFlags": 0,
                             "Transform": {
-                              "$id": 83,
+                              "$id": 82,
                               "$type": "Prowl.Vector.Transform, Prowl.Runtime, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null",
                               "_localPosition": {
                                 "X": 0F,
@@ -1816,7 +1807,7 @@
                             ],
                             "Children": [
                               {
-                                "$id": 84,
+                                "$id": 83,
                                 "Name": "upperarm.l",
                                 "AssetPath": "",
                                 "Identifier": "2bb5a261-3790-4129-b118-3fb84bebb5c3",
@@ -1827,7 +1818,7 @@
                                 "LayerIndex": 0,
                                 "HideFlags": 0,
                                 "Transform": {
-                                  "$id": 85,
+                                  "$id": 84,
                                   "$type": "Prowl.Vector.Transform, Prowl.Runtime, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null",
                                   "_localPosition": {
                                     "X": 0.21200737F,
@@ -1851,7 +1842,7 @@
                                 ],
                                 "Children": [
                                   {
-                                    "$id": 86,
+                                    "$id": 85,
                                     "Name": "lowerarm.l",
                                     "AssetPath": "",
                                     "Identifier": "7d3c3248-5070-444d-87b7-d56657c60bd6",
@@ -1862,7 +1853,7 @@
                                     "LayerIndex": 0,
                                     "HideFlags": 0,
                                     "Transform": {
-                                      "$id": 87,
+                                      "$id": 86,
                                       "$type": "Prowl.Vector.Transform, Prowl.Runtime, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null",
                                       "_localPosition": {
                                         "X": -3.2196643E-09F,
@@ -1886,7 +1877,7 @@
                                     ],
                                     "Children": [
                                       {
-                                        "$id": 88,
+                                        "$id": 87,
                                         "Name": "wrist.l",
                                         "AssetPath": "",
                                         "Identifier": "faf08707-9db8-411f-881e-937c833c1504",
@@ -1897,7 +1888,7 @@
                                         "LayerIndex": 0,
                                         "HideFlags": 0,
                                         "Transform": {
-                                          "$id": 89,
+                                          "$id": 88,
                                           "$type": "Prowl.Vector.Transform, Prowl.Runtime, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null",
                                           "_localPosition": {
                                             "X": 7.426282E-09F,
@@ -1921,7 +1912,7 @@
                                         ],
                                         "Children": [
                                           {
-                                            "$id": 90,
+                                            "$id": 89,
                                             "Name": "hand.l",
                                             "AssetPath": "",
                                             "Identifier": "046c3f7a-0ec9-4d76-afb1-cfc0322ca7e1",
@@ -1932,7 +1923,7 @@
                                             "LayerIndex": 0,
                                             "HideFlags": 0,
                                             "Transform": {
-                                              "$id": 91,
+                                              "$id": 90,
                                               "$type": "Prowl.Vector.Transform, Prowl.Runtime, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null",
                                               "_localPosition": {
                                                 "X": 9.054979E-13F,
@@ -1956,7 +1947,7 @@
                                             ],
                                             "Children": [
                                               {
-                                                "$id": 92,
+                                                "$id": 91,
                                                 "Name": "handslot.l",
                                                 "AssetPath": "",
                                                 "Identifier": "f30036ce-a9c7-456f-ab97-b894113ec621",
@@ -1967,7 +1958,7 @@
                                                 "LayerIndex": 0,
                                                 "HideFlags": 0,
                                                 "Transform": {
-                                                  "$id": 93,
+                                                  "$id": 92,
                                                   "$type": "Prowl.Vector.Transform, Prowl.Runtime, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null",
                                                   "_localPosition": {
                                                     "X": 5.1389204E-10F,
@@ -2002,7 +1993,7 @@
                                 ]
                               },
                               {
-                                "$id": 94,
+                                "$id": 93,
                                 "Name": "head",
                                 "AssetPath": "",
                                 "Identifier": "0b6a045a-e396-4147-9139-22c569d35926",
@@ -2013,7 +2004,7 @@
                                 "LayerIndex": 0,
                                 "HideFlags": 0,
                                 "Transform": {
-                                  "$id": 95,
+                                  "$id": 94,
                                   "$type": "Prowl.Vector.Transform, Prowl.Runtime, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null",
                                   "_localPosition": {
                                     "X": 0F,
@@ -2040,7 +2031,7 @@
                                 ]
                               },
                               {
-                                "$id": 96,
+                                "$id": 95,
                                 "Name": "upperarm.r",
                                 "AssetPath": "",
                                 "Identifier": "47c7b909-319b-4b1c-90ab-a0e1d3a377d1",
@@ -2051,7 +2042,7 @@
                                 "LayerIndex": 0,
                                 "HideFlags": 0,
                                 "Transform": {
-                                  "$id": 97,
+                                  "$id": 96,
                                   "$type": "Prowl.Vector.Transform, Prowl.Runtime, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null",
                                   "_localPosition": {
                                     "X": -0.21200737F,
@@ -2075,7 +2066,7 @@
                                 ],
                                 "Children": [
                                   {
-                                    "$id": 98,
+                                    "$id": 97,
                                     "Name": "lowerarm.r",
                                     "AssetPath": "",
                                     "Identifier": "9d8630f7-6b43-46e8-91ca-1883daed4696",
@@ -2086,7 +2077,7 @@
                                     "LayerIndex": 0,
                                     "HideFlags": 0,
                                     "Transform": {
-                                      "$id": 99,
+                                      "$id": 98,
                                       "$type": "Prowl.Vector.Transform, Prowl.Runtime, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null",
                                       "_localPosition": {
                                         "X": -7.1219225E-11F,
@@ -2110,7 +2101,7 @@
                                     ],
                                     "Children": [
                                       {
-                                        "$id": 100,
+                                        "$id": 99,
                                         "Name": "wrist.r",
                                         "AssetPath": "",
                                         "Identifier": "68865fde-b6d2-4e35-b1bf-19b5dde5079c",
@@ -2121,7 +2112,7 @@
                                         "LayerIndex": 0,
                                         "HideFlags": 0,
                                         "Transform": {
-                                          "$id": 101,
+                                          "$id": 100,
                                           "$type": "Prowl.Vector.Transform, Prowl.Runtime, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null",
                                           "_localPosition": {
                                             "X": -7.426282E-09F,
@@ -2145,7 +2136,7 @@
                                         ],
                                         "Children": [
                                           {
-                                            "$id": 102,
+                                            "$id": 101,
                                             "Name": "hand.r",
                                             "AssetPath": "",
                                             "Identifier": "c48eaa32-cd56-4dbf-94f9-bf95a89baf43",
@@ -2156,7 +2147,7 @@
                                             "LayerIndex": 0,
                                             "HideFlags": 0,
                                             "Transform": {
-                                              "$id": 103,
+                                              "$id": 102,
                                               "$type": "Prowl.Vector.Transform, Prowl.Runtime, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null",
                                               "_localPosition": {
                                                 "X": 3.996803E-15F,
@@ -2180,7 +2171,7 @@
                                             ],
                                             "Children": [
                                               {
-                                                "$id": 104,
+                                                "$id": 103,
                                                 "Name": "handslot.r",
                                                 "AssetPath": "",
                                                 "Identifier": "d5a13438-5247-43b9-99ee-fe9bda2d1a48",
@@ -2191,7 +2182,7 @@
                                                 "LayerIndex": 0,
                                                 "HideFlags": 0,
                                                 "Transform": {
-                                                  "$id": 105,
+                                                  "$id": 104,
                                                   "$type": "Prowl.Vector.Transform, Prowl.Runtime, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null",
                                                   "_localPosition": {
                                                     "X": -5.1389204E-10F,
@@ -2230,7 +2221,7 @@
                         ]
                       },
                       {
-                        "$id": 106,
+                        "$id": 105,
                         "Name": "upperleg.l",
                         "AssetPath": "",
                         "Identifier": "3488374e-8d56-479d-8c23-1fb6e98b26c5",
@@ -2241,7 +2232,7 @@
                         "LayerIndex": 0,
                         "HideFlags": 0,
                         "Transform": {
-                          "$id": 107,
+                          "$id": 106,
                           "$type": "Prowl.Vector.Transform, Prowl.Runtime, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null",
                           "_localPosition": {
                             "X": 0.17094506F,
@@ -2265,7 +2256,7 @@
                         ],
                         "Children": [
                           {
-                            "$id": 108,
+                            "$id": 107,
                             "Name": "lowerleg.l",
                             "AssetPath": "",
                             "Identifier": "3fd6de5a-fd3d-4abe-9948-3ecbad595b4c",
@@ -2276,7 +2267,7 @@
                             "LayerIndex": 0,
                             "HideFlags": 0,
                             "Transform": {
-                              "$id": 109,
+                              "$id": 108,
                               "$type": "Prowl.Vector.Transform, Prowl.Runtime, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null",
                               "_localPosition": {
                                 "X": 3.5797574E-09F,
@@ -2300,7 +2291,7 @@
                             ],
                             "Children": [
                               {
-                                "$id": 110,
+                                "$id": 109,
                                 "Name": "foot.l",
                                 "AssetPath": "",
                                 "Identifier": "a3e49c5d-7f83-4b73-9b4b-aa246e5cd8f8",
@@ -2311,7 +2302,7 @@
                                 "LayerIndex": 0,
                                 "HideFlags": 0,
                                 "Transform": {
-                                  "$id": 111,
+                                  "$id": 110,
                                   "$type": "Prowl.Vector.Transform, Prowl.Runtime, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null",
                                   "_localPosition": {
                                     "X": 1.8339347E-10F,
@@ -2335,7 +2326,7 @@
                                 ],
                                 "Children": [
                                   {
-                                    "$id": 112,
+                                    "$id": 111,
                                     "Name": "toes.l",
                                     "AssetPath": "",
                                     "Identifier": "786f65ba-654c-4ec8-b084-495a2c283003",
@@ -2346,7 +2337,7 @@
                                     "LayerIndex": 0,
                                     "HideFlags": 0,
                                     "Transform": {
-                                      "$id": 113,
+                                      "$id": 112,
                                       "$type": "Prowl.Vector.Transform, Prowl.Runtime, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null",
                                       "_localPosition": {
                                         "X": -1.5114397E-08F,
@@ -2379,7 +2370,7 @@
                         ]
                       },
                       {
-                        "$id": 114,
+                        "$id": 113,
                         "Name": "upperleg.r",
                         "AssetPath": "",
                         "Identifier": "8aeda947-0a0d-41dc-917f-0b22db0f0dc0",
@@ -2390,7 +2381,7 @@
                         "LayerIndex": 0,
                         "HideFlags": 0,
                         "Transform": {
-                          "$id": 115,
+                          "$id": 114,
                           "$type": "Prowl.Vector.Transform, Prowl.Runtime, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null",
                           "_localPosition": {
                             "X": -0.17094506F,
@@ -2414,7 +2405,7 @@
                         ],
                         "Children": [
                           {
-                            "$id": 116,
+                            "$id": 115,
                             "Name": "lowerleg.r",
                             "AssetPath": "",
                             "Identifier": "91d5746e-5b22-47c3-b7c9-9e8649df6a60",
@@ -2425,7 +2416,7 @@
                             "LayerIndex": 0,
                             "HideFlags": 0,
                             "Transform": {
-                              "$id": 117,
+                              "$id": 116,
                               "$type": "Prowl.Vector.Transform, Prowl.Runtime, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null",
                               "_localPosition": {
                                 "X": -3.5797574E-09F,
@@ -2449,7 +2440,7 @@
                             ],
                             "Children": [
                               {
-                                "$id": 118,
+                                "$id": 117,
                                 "Name": "foot.r",
                                 "AssetPath": "",
                                 "Identifier": "d57d532e-621a-4e9b-ac7b-c954d727df14",
@@ -2460,7 +2451,7 @@
                                 "LayerIndex": 0,
                                 "HideFlags": 0,
                                 "Transform": {
-                                  "$id": 119,
+                                  "$id": 118,
                                   "$type": "Prowl.Vector.Transform, Prowl.Runtime, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null",
                                   "_localPosition": {
                                     "X": -1.8339222E-10F,
@@ -2484,7 +2475,7 @@
                                 ],
                                 "Children": [
                                   {
-                                    "$id": 120,
+                                    "$id": 119,
                                     "Name": "toes.r",
                                     "AssetPath": "",
                                     "Identifier": "62a599e8-4587-4525-ac45-7f53c60247ad",
@@ -2495,7 +2486,7 @@
                                     "LayerIndex": 0,
                                     "HideFlags": 0,
                                     "Transform": {
-                                      "$id": 121,
+                                      "$id": 120,
                                       "$type": "Prowl.Vector.Transform, Prowl.Runtime, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null",
                                       "_localPosition": {
                                         "X": 2.1323326E-10F,
@@ -2536,100 +2527,100 @@
         ]
       },
       {
-        "$id": 53
+        "$id": 52
       },
       {
-        "$id": 55
+        "$id": 54
       },
       {
-        "$id": 58
+        "$id": 57
       },
       {
-        "$id": 61
+        "$id": 60
       },
       {
-        "$id": 64
+        "$id": 63
       },
       {
-        "$id": 67
+        "$id": 66
       },
       {
-        "$id": 70
+        "$id": 69
       },
       {
-        "$id": 73
+        "$id": 72
       },
       {
-        "$id": 76
+        "$id": 75
       },
       {
-        "$id": 78
+        "$id": 77
       },
       {
-        "$id": 80
+        "$id": 79
       },
       {
-        "$id": 82
+        "$id": 81
       },
       {
-        "$id": 84
+        "$id": 83
       },
       {
-        "$id": 86
+        "$id": 85
       },
       {
-        "$id": 88
+        "$id": 87
       },
       {
-        "$id": 90
+        "$id": 89
       },
       {
-        "$id": 92
+        "$id": 91
       },
       {
-        "$id": 94
+        "$id": 93
       },
       {
-        "$id": 96
+        "$id": 95
       },
       {
-        "$id": 98
+        "$id": 97
       },
       {
-        "$id": 100
+        "$id": 99
       },
       {
-        "$id": 102
+        "$id": 101
       },
       {
-        "$id": 104
+        "$id": 103
       },
       {
-        "$id": 106
+        "$id": 105
       },
       {
-        "$id": 108
+        "$id": 107
       },
       {
-        "$id": 110
+        "$id": 109
       },
       {
-        "$id": 112
+        "$id": 111
       },
       {
-        "$id": 114
+        "$id": 113
       },
       {
-        "$id": 116
+        "$id": 115
       },
       {
-        "$id": 118
+        "$id": 117
       },
       {
-        "$id": 120
+        "$id": 119
       },
       {
-        "$id": 122,
+        "$id": 121,
         "Name": "Player",
         "AssetPath": "",
         "Identifier": "e34e5de8-2e16-4655-a3c4-560e4697050e",
@@ -2640,7 +2631,7 @@
         "LayerIndex": 0,
         "HideFlags": 0,
         "Transform": {
-          "$id": 123,
+          "$id": 122,
           "$type": "Prowl.Vector.Transform, Prowl.Runtime, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null",
           "_localPosition": {
             "X": 12.606101F,
@@ -2661,7 +2652,7 @@
         },
         "Components": [
           {
-            "$id": 124,
+            "$id": 123,
             "$type": "Prowl.Runtime.CharacterController, Prowl.Runtime, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null",
             "Shape": 1,
             "Radius": 0.5F,
@@ -2681,7 +2672,7 @@
         ],
         "Children": [
           {
-            "$id": 51
+            "$id": 50
           }
         ]
       }
